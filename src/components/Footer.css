@@ -1,0 +1,41 @@
+.footer{
+    padding: 4rem 6rem;
+    background: #000;
+    color: #fff;
+    padding-top: 2rem;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.firstcol, .secondcol, .thirdcol{
+    display: flex;
+    flex-direction: column;
+}
+
+ h4{
+    font-size: 1.3rem;
+    padding: 1rem 0 0.8rem 0;
+}
+
+a{
+    text-decoration: none;
+    color: #fafafa;
+    padding-bottom: 0.4rem;
+    font-size: 1.1rem;
+}
+
+.copyright{
+    text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+    .footer{
+        padding: 4rem 2rem;
+    }
+
+    .firstcol, .secondcol, .thirdcol div{
+        width: 50%;
+    }
+}
