@@ -73,6 +73,12 @@ class FileUpload extends Component {
      
       return (
         <div>
+            <h1>
+              Experience Now
+            </h1>
+            <h3>
+              Precise Diagnosis for Optimal Health
+            </h3>
             <div>
                 <input type="file" onChange={this.onFileChange} />
                 <button onClick={this.onFileUpload}>
