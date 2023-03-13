@@ -677,7 +677,7 @@ Our symptom checker uses an advanced AI technology to analyze your symptoms and 
 						lg-font="normal 500 16px/1.6 &quot;Inter&quot;, sans-serif"
 						md-font="normal 500 14px/1.6 &quot;Inter&quot;, sans-serif"
 					>
-						Stage 2
+						Future Work
 					</Text>
 				</Box>
 				<Text
@@ -704,10 +704,10 @@ Our symptom checker uses an advanced AI technology to analyze your symptoms and 
 					color="--darkL2"
 					text-align="center"
 				>
-					Our symptoms analysis tool is designed to provide a comprehensive understanding of your patients' health. The tool collects and analyzes symptoms, using deep learning algorithms to identify patterns and make predictions on the same. The tool is accurate up-to the standards to provide valuable insights and a percentage of possibility for each disease. {" "}
+					Our symptoms analysis tool will design to provide a comprehensive understanding of your patients' health. The tool collects and analyzes symptoms, using deep learning algorithms to identify patterns and make predictions on the same. The tool is accurate up-to the standards to provide valuable insights and a percentage of possibility for each disease. {" "}
 					<br />
 					<br />
-					With our symptoms analysis tool, you can make informed decisions about your patients' care and provide them with the best possible outcomes. Our commitment to using the latest AI technology ensures that our tool is always at the forefront of medical advancements, providing you with the best possible results. Likewise, it is recommended to consult a medical specialist with the report and it is recommended not to take decisions for yourself.
+					With our symptoms analysis tool, you can will make informed decisions about your patients' care and provide them with the best possible outcomes. Our commitment to using the latest AI technology ensures that our tool will always at the forefront of medical advancements, providing you with the best possible results. Likewise, it will recommend to consult a medical specialist with the report and it will recommend not to take decisions for yourself.
 				</Text>
 			</Box>
 		</Section>
