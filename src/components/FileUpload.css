@@ -4,6 +4,10 @@
     color: rgb(227, 48, 48);
 }
 
+/* .progress-bar-info {
+    width: progressInfo.percentage + "%"
+} */
+
 .list-group-item {
     font-size: 15px;
     font-weight: 400;

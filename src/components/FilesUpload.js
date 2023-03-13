@@ -168,7 +168,7 @@ const UploadFiles = () => {
                     <li className="list-group-item">
                         <ol>
                             <li>Before uploading a CT scan, make sure it is in a supported file format, such as <b>JPG</b>, <b>JPEG</b>, and <b>PNG</b>.</li>
-                            <li>The maximum file size for CT scans uploaded to the web app is 25MB.</li>
+                            <li>The maximum file size for CT scans uploaded to the web app is <b>25MB</b>.</li>
                             <li>Do not refresh the page while the process is underway.</li>
                             <li>To ensure accurate predictions, ensure that the CT scan is of good quality and resolution.</li>
                             <li>The predictions are based on statistical models and should not be considered as a definite diagnosis.</li>
