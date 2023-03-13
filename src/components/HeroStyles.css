@@ -29,19 +29,26 @@ img {
 
 .hero-text p {
     font-size: 1.3rem;
-    color: #fff;
+    color: #000;
+    font-weight: bold;
     padding: 0.5rem 0 2rem 0;
 }
 
 .hero-text .show{
     text-decoration: none;
-    background: #fff;
+    background: #ffffff;
     padding: 1rem 2rem;
-    border-radius: 6px;
+    border-radius: 30px;
+    border-width: 5px;
     font-size: 1.1rem;
     font-weight: bold;
     letter-spacing: 2px;
     color: #222;
+    transition: ease-in-out 0.3s;
+}
+
+.hero-text .show :hover{
+    background-color: blue;
 }
 
 @media screen and (max-width: 555px) {
