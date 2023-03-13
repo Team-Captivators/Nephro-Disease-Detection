@@ -3,31 +3,31 @@ export const MenuItems = [
         title : "HOME",
         url : "/",
         className : "nav-links",
-        //icon : "fa-solid fa-house"
+        icon : "fa-solid fa-house"
     }, 
     {
         title : "DETECTION",
-        url : "/detection",
+        url : "/",
         className : "nav-links",
-        //icon : "fa-solid fa-circle"
+        icon : "fa-solid fa-magnifying-glass"
     }, 
     {
         title : "SYMPTOMS",
-        url : "/symptoms",
+        url : "/",
         className : "nav-links",
-        //icon : "fa-solid fa-briefcase"
+        icon : "fa-solid fa-briefcase"
     }, 
     {
         title : "FAQ",
-        url : "/faq",
+        url : "/",
         className : "nav-links",
-        //icon : "fa-solid fa-faq"
+        icon : "fa-solid fa-square-question"
     }, 
     {
         title : "CONTACT US",
-        url : "/contact",
+        url : "/",
         className : "nav-links",
-        //icon : "fa-solid fa-address"
+        icon : "fa-solid fa-message-text"
     }
 
 
