@@ -6,12 +6,14 @@ function Stage(){
         <div className="stage">
             <div className="stagecard">
                 <StageData
+                    icon="fa-solid fa-user-doctor"
                     mainheading="Stage 1"
                     heading="DISEASE DETECTION"
                     text="Our disease detection tool is based on advanced AI techniques, including deep learning algorithms that analyze CT scans for nephrological diseases. The tool processes large amounts of medical data and uses complex mathematical models to identify the underlying patterns and make predictions on the report using deep learning. 
                     The result is a highly accurate and fast disease detection tool that provides you with valuable insights into your patients' health. Our commitment to using the latest AI technology ensures that our tool is always at the forefront of medical advancements, providing you with the best possible results. However, it is recommended to consult a medical specialists for treatments. Since the technology is under the research stage, there may be circumstances of innacurate results."
                 />
                 <StageData
+                    icon="fa-solid fa-user-doctor"
                     mainheading="Future Work"
                     heading="SYMPTOMS ANALYSIS"
                     text="Our symptoms analysis tool will design to provide a comprehensive understanding of your patients' health. The tool collects and analyzes symptoms, using deep learning algorithms to identify patterns and make predictions on the same. The tool is accurate up-to the standards to provide valuable insights and a percentage of possibility for each disease.
