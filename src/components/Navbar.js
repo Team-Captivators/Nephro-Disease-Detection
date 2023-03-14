@@ -13,8 +13,8 @@ class Navbar extends Component{
     render(){
         return(
             <nav className="NavbarItems">
-                <h1 className="navbar-logo-name">Nephro AI</h1>
-                <a href="/" className="navbar-logo"><img src={Logo} alt="Logo.png"/></a>
+                <a href="/" className="navbar-logo-name">Nephro AI</a>
+                {/* <a href="/" className="navbar-logo"><img src={Logo} alt="Logo.png"/></a> */}
 
                 <div className="menu-icons" onClick={this.handleClick}>
                     <i className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}></i>
@@ -25,12 +25,11 @@ class Navbar extends Component{
                         return(
                             <li key={index}>
                                 <Link className={item.className} to={item.url}>
-                                    <i className={item.icon}></i>{item.title} 
+                                   {item.title}                 
                                 </Link>
                             </li>
                         );
                     })}
-                    
                 </ul>
             </nav>
         )
@@ -38,3 +37,6 @@ class Navbar extends Component{
 } 
 
 export default Navbar;
+
+
+{/* <i className={item.icon}></i>  */}

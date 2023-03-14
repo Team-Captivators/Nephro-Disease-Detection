@@ -1,19 +1,19 @@
 .content {
-    margin: 4rem, 6rem;
+    margin: 4rem 6rem;
 }
 
 .content h1{
     font-size: 3rem;
     text-align: center;
     padding-top: 50px;
-    color: blue;
+    color: #1a4ccc;
 }
 
 .first-des{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 4.5rem;
+    margin-top: 3.5rem;
 }
 
 .first-des-reverse{
@@ -21,8 +21,7 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
-    margin-top: 4.5rem;
-    padding-right: 200px;
+    margin-top: 3.5rem;
 }
 
 .des-text{
@@ -46,7 +45,7 @@
 }
 
 .image img{
-    width: 75%;
+    width: 80%;
     height: 350px;
     object-fit: cover;
     border-radius: 6px;

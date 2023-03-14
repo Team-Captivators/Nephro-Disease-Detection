@@ -15,20 +15,18 @@ export const MenuItems = [
         title : "SYMPTOMS",
         url : "/",
         className : "nav-links",
-        icon : "fa-solid fa-briefcase"
+        icon : "fa-duotone fa-mug-hot"
     }, 
     {
         title : "FAQ",
         url : "/",
         className : "nav-links",
-        icon : "fa-solid fa-square-question"
+        icon : "fa-duotone fa-mug-hot"
     }, 
     {
         title : "CONTACT US",
         url : "/",
         className : "nav-links",
-        icon : "fa-solid fa-message-text"
+        icon : "fa-duotone fa-mug-hot"
     }
-
-
 ]

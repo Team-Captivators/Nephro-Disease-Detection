@@ -10,7 +10,6 @@ import "./Home.css";
 import Faq from "../components/Faq";
 import FileUpload from "../components/FileUpload";
 
-
 function Home(){
     return(
         <>
