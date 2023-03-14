@@ -1,8 +1,5 @@
 import { Component } from "react";
 import "./Content.css";
-import S001 from "../images/S001.png";
-import S002 from "../images/S002.png";
-import S003 from "../images/S003.png";
 
 class ContentData extends Component{
     render(){
