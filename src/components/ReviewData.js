@@ -10,4 +10,3 @@ function ReviewData(props){
 }
 
 export default ReviewData
- 

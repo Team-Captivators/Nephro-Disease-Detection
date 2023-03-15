@@ -1,4 +1,4 @@
-.footer{
+.frowone{
     padding: 4rem 6rem;
     background: #000;
     color: #fff;
@@ -14,9 +14,18 @@
     flex-direction: column;
 }
 
- h4{
+h4{
     font-size: 1.3rem;
     padding: 1rem 0 0.8rem 0;
+}
+
+.footer-logo{
+    padding-top: 10px;
+    height: 90px;
+}
+.firstcol p{
+    padding-top: 20px;
+    font-weight: bold;
 }
 
 a{
@@ -26,8 +35,17 @@ a{
     font-size: 1.1rem;
 }
 
+a:hover{
+    color: #c52c2c;
+}
+
 .copyright{
     text-align: center;
+}
+
+.frowtwo {
+    color: #fff;
+    background-color: #000;
 }
 
 @media screen and (max-width: 850px) {
