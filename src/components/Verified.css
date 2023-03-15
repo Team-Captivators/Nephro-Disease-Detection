@@ -3,12 +3,9 @@
     color: #2a2a2a;
 }
 
-.verified h3{
-    text-align: start;
-    color: blue;
-}
-
-.verified h4{
+.verified h1{
+    text-align: center;
+    color: 1a4ccc;
     font-size: 3rem;
 }
 
@@ -16,6 +13,12 @@
     margin-top: 3rem;
     display: flex;
     justify-content: space-between;
+}
+
+.t-card i{
+    padding-left: 12px;
+    /* width: 6px;
+    height: 6px; */
 }
 
 .verifiedcard .secondrow{
