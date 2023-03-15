@@ -5,8 +5,8 @@
 
 .faq h1{
     font-size: 3rem;
-    text-align: start;
-    color: blue;
+    text-align: center;
+    color: #1a4ccc;
 }
 
 .faq h4{
@@ -52,5 +52,4 @@
         width: 100%;
         margin-bottom: 1.5rem;
     }
-    
 }
