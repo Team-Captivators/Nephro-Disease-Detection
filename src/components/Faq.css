@@ -1,44 +1,51 @@
-.faq{
-    margin: 4rem 6rem;
-    color: #2a2a2a;
-}
-
-.faq h1{
+h1{
     font-size: 3rem;
     text-align: center;
     color: #1a4ccc;
 }
 
-.faq h4{
-    font-size: 3rem;
+.wrapper {
+    display: flex;
+    /* height: 10px; */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
-.faqcard .firstrow{
-    margin-top: 3rem;
+.accordion {
+
+    width: 1200px;
+}
+
+.item {
+    background: #f0ebe1;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+}
+
+.title {
+    color: #000000;
     display: flex;
     justify-content: space-between;
-}
-
-.faqcard .secondrow{
-    margin-top: 3rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-.t-card{
-    width: 32%;
-    text-align: start;
-    box-shadow: 0 5px 25px 2px rgba(0, 0, 0, 0.11);
-    border-radius: 7px;
+    text-align: center;
     cursor: pointer;
-    padding: 1rem .8rem;
 }
 
-.t-card h4{
+.content {
+    color: #8b7f75;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0,1,0,1);
+}
+
+.content.show{
     font-size: 1.3rem;
-    padding: .9rem 0 .2rem 0;
+    height: auto;
+    max-height: 9999px;
+    transition: all 0.5s cubic-bezier(1,0,1,0);
 }
 
+/* 
 @media screen and (max-width:850px) {
     .faq{
         margin: 4rem 2rem;
@@ -52,4 +59,4 @@
         width: 100%;
         margin-bottom: 1.5rem;
     }
-}
+}  */
