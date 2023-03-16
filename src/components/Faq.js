@@ -21,7 +21,7 @@ function Faq(){
                             <h2>{item.question}</h2>
                             <span>{selected === i ? '-' : '+'}</span>
                         </div>
-                        <div className={selected === i ? 'content show' : 'content'}>{item.answer}</div>
+                        <div className={selected === i ? 'faq-content show' : 'faq-content'}>{item.answer}</div>
                     </div>
                 ))}
             </div>

@@ -6,40 +6,46 @@ h1{
 
 .wrapper {
     display: flex;
-    /* height: 10px; */
     width: 100%;
     justify-content: center;
     align-items: center;
 }
 
 .accordion {
-
     width: 1200px;
 }
 
+span{
+    font-size: 2rem;
+}
+
 .item {
-    background: #f0ebe1;
-    margin-bottom: 5px;
+    background: #e6e7f3;
+    border-style: inset;
+    border-radius: 8px;
+    margin-bottom: 18px;
     padding: 10px 20px;
 }
 
 .title {
     color: #000000;
+    font-size: 0.9rem;
     display: flex;
     justify-content: space-between;
     text-align: center;
     cursor: pointer;
 }
 
-.content {
-    color: #8b7f75;
+.faq-content {
+    color: #2a2a2a;
+    font-size: 1.1rem;
     max-height: 0;
     overflow: hidden;
     transition: all 0.5s cubic-bezier(0,1,0,1);
 }
 
-.content.show{
-    font-size: 1.3rem;
+.faq-content.show{
+    
     height: auto;
     max-height: 9999px;
     transition: all 0.5s cubic-bezier(1,0,1,0);
