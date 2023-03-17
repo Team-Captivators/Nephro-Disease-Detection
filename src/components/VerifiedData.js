@@ -2,7 +2,7 @@ import "./Verified";
 
 function FaqData(props){
     return(
-        <div className="t-card">
+        <div className="verified-card">
             <h4>{props.heading}<i className={props.icon}></i></h4>
             <p>{props.text}</p>
         </div>
