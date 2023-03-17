@@ -1,4 +1,4 @@
-h1{
+.heading h1{
     font-size: 3rem;
     text-align: center;
     color: #1a4ccc;
@@ -20,7 +20,7 @@ span{
 }
 
 .item {
-    background: #e6e7f3;
+    background: #eaebf7;
     border-style: inset;
     border-radius: 8px;
     margin-bottom: 18px;
@@ -41,6 +41,7 @@ span{
     font-size: 1.1rem;
     max-height: 0;
     overflow: hidden;
+    text-align: justify;
     transition: all 0.5s cubic-bezier(0,1,0,1);
 }
 
@@ -51,18 +52,20 @@ span{
     transition: all 0.5s cubic-bezier(1,0,1,0);
 }
 
-/* 
+
 @media screen and (max-width:850px) {
-    .faq{
-        margin: 4rem 2rem;
+    .item {
+        border-radius: 6px;
+        margin-bottom: 18px;
+        padding: 10px 8px;
     }
 
-    .faqcard{
-        flex-direction: column;
+    .title {
+        font-size: 0.7rem;
     }
 
-    .t-card{
-        width: 100%;
-        margin-bottom: 1.5rem;
+    .faq-content {
+        font-size: 0.8rem;
+        max-height: 0;
     }
-}  */
+} 
