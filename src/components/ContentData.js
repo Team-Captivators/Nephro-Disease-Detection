@@ -9,7 +9,7 @@ class ContentData extends Component{
                     <h2>{this.props.heading}</h2>
                     <p>{this.props.text}</p>
                 </div>
-                <div className="image">
+                <div className="content-image">
                     <img alt="img" src={this.props.img1}/>
                 </div>
             </div>

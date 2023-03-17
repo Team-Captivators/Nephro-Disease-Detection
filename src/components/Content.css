@@ -6,7 +6,6 @@
 .content h1{
     font-size: 3rem;
     text-align: center;
-    padding-top: 50px;
     color: #1a4ccc;
 }
 
@@ -15,7 +14,6 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 3.5rem;
-    
 }
 
 .first-des-reverse{
@@ -37,21 +35,23 @@
     padding-bottom: 1rem;
 }
 
-.image{
+.content-image{
     position: relative;
-    width: 90%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
-    margin-left: 350px;
+    padding-left: 70px;
     z-index: -99;
 }
 
-.image img{
+.content-image img{
     width: 80%;
     height: 350px;
     object-fit: cover;
-    border-radius: 6px;
-    box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    box-shadow: -2px 2px 64px -12px rgba(0, 0, 0, 0.19);
+    border-style: groove;
+    border-width: 6px;
 }
 
 @media screen and (max-width: 850px) {
@@ -71,7 +71,6 @@
         margin-top: 4.5rem;
     }
     
-
     .des-text{
         width: 100%;
     }
