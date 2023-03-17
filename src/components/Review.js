@@ -25,18 +25,18 @@ const NextBtn = (props) => {
 const Review = () => {
   return (
     <div className="review">
-      <div style={{ width: "50%", textAlign: "center" }}>
+      <div style={{ width: "60%", textAlign: "center" }}>
         <h1>Reviews</h1>
         <Slider prevArrow={<PreviousBtn />} nextArrow={<NextBtn />} dots>
           <Card img="https://images.unsplash.com/photo-1583864697784-a0efc8379f70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWFsZSUyMHByb2ZpbGV8ZW58MHx8MHx8&w=1000&q=80"
           description="I was diagnosed with Polycystic Kidney Disease and was afraid of the long and complicated process of finding the right treatment. The CT scan tool made it so easy for me to get a clear diagnosis and move forward with my treatment plan. I am so grateful for this tool and highly recommend it to anyone with nephrological concerns."
-          name="Jacob Brown"/>
+          name="~ Jacob Brown ~"/>
           <Card img="https://techtrickseo.com/wp-content/uploads/2019/11/asfDFHJDKFHDFJH.jpg" 
           description="I was experiencing long-lasting pain in my back and loss of appetite, and wasn't sure what was causing it. The CT scan tool quickly identified Renal Adenoma, and I was able to receive a comprehensive report that helped me understand my condition and the next steps I need to take. I am so thankful for this tool."
-          name="Adriana Williams"/>
+          name="~ Adriana Williams ~"/>
           <Card img="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?cs=srgb&dl=pexels-italo-melo-2379004.jpg&fm=jpg" 
           description="I was skeptical about using an online CT scan tool at first, but I am so glad I did. The results were just as accurate as if I had gone to the doctor, and I was able to receive my report within a matter of minutes. I highly recommend this tool to anyone looking for a convenient and reliable way to diagnose nephrological diseases."
-          name="Ethan Tremblay"/>
+          name="~ Ethan Tremblay ~"/>
         </Slider>
       </div>
     </div>
@@ -68,9 +68,9 @@ const Card = ({ img, description, name }) => {
       <p>
       {description}
       </p>
-      <p style={{ fontStyle: "italic", marginTop: 25 }}>
-        <span style={{ fontWeight: 500, color: "green" }}>{name}</span>
-      </p>
+      <h4 style={{ fontStyle: "italic"}}>
+        <span style={{ fontWeight: 600, color: "green" }}>{name}</span>
+      </h4>
     </div>
   );
 };
