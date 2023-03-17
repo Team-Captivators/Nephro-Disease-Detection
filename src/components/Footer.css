@@ -20,12 +20,14 @@ h4{
 }
 
 .footer-logo{
-    padding-top: 10px;
-    height: 90px;
+    padding-top: 5px;
+    height: 110px;
 }
+
 .firstcol p{
     padding-top: 20px;
     font-weight: bold;
+    color: #fff;
 }
 
 a{
@@ -44,7 +46,7 @@ a:hover{
 }
 
 .frowtwo {
-    color: #fff;
+    color: #ffffff;
     background-color: #000;
 }
 
