@@ -117,8 +117,8 @@ const FileUpload = () => {
   };
 
   return (
-    <div>
-      <h1 id="uploadLink">Experience Now</h1>
+    <div className="fileborder" id="uploadLink">
+      <h1>Experience Now</h1>
       <div className="heading">Precise Diagnosis for Optimal Health</div>
       {progressInfos && progressInfos.val.length > 0 &&
         progressInfos.val.map((progressInfo, index) => (
@@ -148,7 +148,7 @@ const FileUpload = () => {
 
           <div className="col-4">
             <button
-                className="btn btn-success btn-sm"
+                className="upload-btn"
                 disabled={!selectedFiles}
                 onClick={uploadFiles}
             >
@@ -165,11 +165,11 @@ const FileUpload = () => {
           </div>
         )}
 
-        <div className="card">
-          <div className="card-header">Guidelines</div>
+        <div className="upload-card">
+          <div className="upload-card-header">Guidelines</div>
           <ul className="list-group-item">
             <li>Before uploading a CT scan, make sure it is in a supported file format, such as <b>JPG</b>, <b>JPEG</b>, and <b>PNG</b>.</li>
-            <li>The maximum file size for CT scans uploaded to the web app is <b>25MB</b>.</li>
+            <li>The maximum file size for CT scans uploaded to the web app is <b>25MB</b> and minimum file size is <b>60KB</b>.</li>
             <li>Do not refresh the page while the process is underway.</li>
             <li>To ensure accurate predictions, ensure that the CT scan is of good quality and resolution.</li>
             <li>The predictions are based on statistical models and should not be considered as a definite diagnosis.</li>

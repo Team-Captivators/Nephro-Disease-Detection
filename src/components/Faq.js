@@ -14,7 +14,7 @@ function Faq(){
     return (
         <div className="wrapper" id="faqLink">
             <div className="accordion">
-                <h1 className="heading">FAQs</h1>
+                <h1>FAQs</h1>
                 {data.map((item, i) => (
                     <div className="item">
                         <div className="title" onClick={() => toggle(i)}>

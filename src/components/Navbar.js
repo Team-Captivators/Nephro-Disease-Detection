@@ -17,25 +17,23 @@ class Navbar extends Component{
                 </div>
 
                 <ul className="nav-menu">
-                  
-                        <li>
-                            <a className="nav-links" href="#homeLink">
-                                Home
-                            </a>
-                            <a className="nav-links" href="#uploadLink">
-                                DETECTION
-                            </a>
-                            <a className="nav-links" href="#stageLink">
-                                SYMPTOMS
-                            </a>
-                            <a className="nav-links" href="#faqLink">
-                                FAQ
-                            </a>
-                            <a className="nav-links" href="#contactLink">
-                                CONTACT US
-                            </a>
-                        </li>
-  
+                    <li>
+                        <a className="nav-links" href="#homeLink">
+                            Home
+                        </a>
+                        <a className="nav-links" href="#uploadLink">
+                            DETECTION
+                        </a>
+                        <a className="nav-links" href="#stageLink">
+                            SYMPTOMS
+                        </a>
+                        <a className="nav-links" href="#faqLink">
+                            FAQ
+                        </a>
+                        <a className="nav-links" href="#contactLink">
+                            CONTACT US
+                        </a>
+                    </li>
                 </ul>
             </nav>
         )
