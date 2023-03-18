@@ -3,7 +3,7 @@ import VerifiedData from "./VerifiedData";
 
 function Verified(){
     return(
-        <div className="verified">
+        <div className="verified" id="verifiedLink">
             <h1>Verified</h1>
             <div className="firstrow">
                 <VerifiedData

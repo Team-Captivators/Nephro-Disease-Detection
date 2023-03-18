@@ -4,19 +4,13 @@
 }
 
 .text-box{
-    display: flex;
-    justify-content: space-between;
     font-size: 1.1rem;
 }
 
-.left-text {
-    margin-right: 10px;
-}
-
-.left-text, .right-text{
+.top-text, .bottom-text{
     margin-top: 3rem;
     color: #1a4ccc;
-    line-height: 30px;
+    line-height: 28px;
 }
 
 .stagedata-card{
@@ -30,6 +24,7 @@
     font-size: 1.4rem;
     color: #2998f9;
     text-align: center;
+    padding-top: 2px;
 }
 
 .stagedata-card h1{

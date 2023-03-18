@@ -3,9 +3,9 @@ import StageData from "./StageData";
 
 function Stage(){
     return(
-        <div className="stage">
+        <div className="stage" id="stageLink">
             <div className="text-box">
-                <div className="left-text">
+                <div className="top-text">
                     <StageData
                         icon="fa-solid fa-user-doctor"
                         mainheading="Stage 1"
@@ -14,7 +14,7 @@ function Stage(){
                         text2="The result is a highly accurate and fast disease detection tool that provides you with valuable insights into your patients' health. Our commitment to using the latest AI technology ensures that our tool is always at the forefront of medical advancements, providing you with the best possible results. However, it is recommended to consult a medical specialists for treatments. Since the technology is under the research stage, there may be circumstances of innacurate results."
                     />
                 </div>
-                <div className="right-text">
+                <div className="bottom-text">
                     <StageData
                         icon="fa-solid fa-user-doctor"
                         mainheading="Future Work"

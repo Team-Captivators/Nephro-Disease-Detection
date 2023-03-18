@@ -31,7 +31,7 @@ const Contact = () => {
     },5000);
 
     return(
-        <div className="form-container">
+        <div className="form-container" id="contactLink">
             <h1>CONTACT US</h1>
             <h3>Email us, we would love to hear form you</h3>
             <form ref={form} onSubmit={sendEmail}>

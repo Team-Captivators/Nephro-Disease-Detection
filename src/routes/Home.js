@@ -21,7 +21,7 @@ function Home(){
             title2="DISEASE DETECTION"
             text="Revolutionize your nephrological disease diagnosis with our cutting-edge AI technology. Our deep learning algorithms accurately detect multiple diseases in real-time, providing you with fast and reliable results. Experience the future of medicine with our AI-powered solution, and give your patients the care they deserve."
             buttonText="Get Started"
-            url="/"
+            href="#contentLink"
             btnClass="show"
             />
             <Content />

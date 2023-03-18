@@ -6,7 +6,7 @@ import ContentData from "./ContentData";
 
 const Content = () =>{
     return(
-        <div className="content">
+        <div className="content" id="contentLink">
             <h1>A New Way of Getting Healthcare</h1>
 
             <ContentData className="first-des"

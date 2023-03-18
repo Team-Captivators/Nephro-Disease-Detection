@@ -1,8 +1,5 @@
 import {Component} from "react";
 import "./NavbarStyles.css";
-import { MenuItems } from "./MenuItems";
-import {Link} from "react-router-dom";
-import Logo from "../images/Logo.png";
 
 class Navbar extends Component{
     state = {clicked : false};
@@ -13,23 +10,32 @@ class Navbar extends Component{
     render(){
         return(
             <nav className="NavbarItems">
-                <a href="/" className="navbar-logo-name">Nephro AI</a>
-                {/* <a href="/" className="navbar-logo"><img src={Logo} alt="Logo.png"/></a> */}
+                <a href="#homeLink" className="navbar-logo-name">Nephro AI</a>
 
                 <div className="menu-icons" onClick={this.handleClick}>
                     <i className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}></i>
                 </div>
 
-                <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
-                    {MenuItems.map((item, index) => {
-                        return(
-                            <li key={index}>
-                                <Link className={item.className} to={item.url}>
-                                   {item.title}                 
-                                </Link>
-                            </li>
-                        );
-                    })}
+                <ul className="nav-menu">
+                  
+                        <li>
+                            <a className="nav-links" href="#homeLink">
+                                Home
+                            </a>
+                            <a className="nav-links" href="#uploadLink">
+                                DETECTION
+                            </a>
+                            <a className="nav-links" href="#stageLink">
+                                SYMPTOMS
+                            </a>
+                            <a className="nav-links" href="#faqLink">
+                                FAQ
+                            </a>
+                            <a className="nav-links" href="#contactLink">
+                                CONTACT US
+                            </a>
+                        </li>
+  
                 </ul>
             </nav>
         )
@@ -37,6 +43,3 @@ class Navbar extends Component{
 } 
 
 export default Navbar;
-
-
-{/* <i className={item.icon}></i>  */}

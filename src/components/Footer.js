@@ -11,17 +11,17 @@ const Footer = () => {
                 </div>
                 <div className="secondcol">
                     <h4>SHORT LINKS</h4>
-                    <a href="/">Home</a>
-                    <a href="/">Detection</a>
-                    <a href="/">Symptoms</a>
-                    <a href="/">FAQ</a>
-                    <a href="/">Contact Us</a>
+                    <a href="#homeLink">Home</a>
+                    <a href="#uploadLink">Detection</a>
+                    <a href="#stageLink">Symptoms</a>
+                    <a href="#faqLink">FAQ</a>
+                    <a href="#contactLink">Contact Us</a>
                 </div>
                 <div className="thirdcol">
                     <h4>QUICK REFERENCES</h4>   
-                    <a href="/">Advantages</a>
-                    <a href="/">Workflow</a>
-                    <a href="/">Reviews</a>
+                    <a href="#contentLink">Advantages</a>
+                    <a href="#verifiedLink">Workflow</a>
+                    <a href="#reviewLink">Reviews</a>
                 </div>
             </div>
             <div className="frowtwo">

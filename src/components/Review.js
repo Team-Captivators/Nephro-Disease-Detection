@@ -24,7 +24,7 @@ const NextBtn = (props) => {
 };
 const Review = () => {
   return (
-    <div className="review">
+    <div className="review" id="reviewLink">
       <div style={{ width: "60%", textAlign: "center" }}>
         <h1>Reviews</h1>
         <Slider prevArrow={<PreviousBtn />} nextArrow={<NextBtn />} dots>
