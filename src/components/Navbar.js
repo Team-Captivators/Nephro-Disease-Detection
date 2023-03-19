@@ -19,7 +19,7 @@ class Navbar extends Component{
                 <ul className="nav-menu">
                     <li>
                         <a className="nav-links" href="#homeLink">
-                            Home
+                            HOME
                         </a>
                         <a className="nav-links" href="#uploadLink">
                             DETECTION

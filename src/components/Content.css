@@ -4,9 +4,10 @@
 }
 
 .content h1{
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-align: center;
     color: #1a4ccc;
+    font-weight: bold;
 }
 
 .first-des{
@@ -27,12 +28,17 @@
 .des-text{
     width: 75%;
     text-align: start;
-    font-size: 1.1rem;
     text-align: justify;
 }
 
 .des-text h2{
-    padding-bottom: 1rem;
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.des-text p{
+    font-size: 1.3rem;
 }
 
 .content-image{
@@ -49,8 +55,7 @@
     height: 350px;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: -2px 2px 64px -12px rgba(0, 0, 0, 0.19);
-    border-style: groove;
+    border-style: double;
     border-width: 6px;
 }
 

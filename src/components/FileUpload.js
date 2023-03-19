@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import UploadService from "./FileUploadService";
 import Table from "../table-common";
 import './FileUpload.css';
-// import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const FileUpload = () => {
   const [selectedFiles, setSelectedFiles] = useState([]);
@@ -139,7 +139,7 @@ const FileUpload = () => {
           </div>
         ))}
 
-        <div className="row my-3">
+        <div className="my-3">
           <div className="col-8">
             <label className="btn btn-default p-0">
                 <input type="file" multiple onChange={selectFiles} />
@@ -169,7 +169,7 @@ const FileUpload = () => {
           <div className="upload-card-header">Guidelines</div>
           <ul className="list-group-item">
             <li>Before uploading a CT scan, make sure it is in a supported file format, such as <b>JPG</b>, <b>JPEG</b>, and <b>PNG</b>.</li>
-            <li>The maximum file size for CT scans uploaded to the web app is <b>25MB</b> and minimum file size is <b>60KB</b>.</li>
+            <li>The maximum file size for CT scans uploaded to the web app is <b>25MB</b> and minimum file size is <b>80KB</b>.</li>
             <li>Do not refresh the page while the process is underway.</li>
             <li>To ensure accurate predictions, ensure that the CT scan is of good quality and resolution.</li>
             <li>The predictions are based on statistical models and should not be considered as a definite diagnosis.</li>

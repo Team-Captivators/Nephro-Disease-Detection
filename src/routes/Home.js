@@ -6,9 +6,9 @@ import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import Review from "../components/Review";
 import Verified from "../components/Verified";
-import "./Home.css";
 import Faq from "../components/Faq";
 import FileUpload from "../components/FileUpload";
+import "./Home.css";
 
 function Home(){
     return(

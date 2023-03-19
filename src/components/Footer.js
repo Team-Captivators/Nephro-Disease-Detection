@@ -7,6 +7,7 @@ const Footer = () => {
             <div className="frowone">
                 <div className="firstcol">
                     <img src={Logo} alt="Logo.png" className="footer-logo"/>
+                    <a href="#homeLink" className="footer-name">Nephro AI</a>
                     <p>DISCOVERING HEALTH</p>
                 </div>
                 <div className="secondcol">
@@ -25,7 +26,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="frowtwo">
-                <p>Copyright © 2023 Nephro AI. All rights reserved.</p>
+                <p>Copyright © 2023 Nephro AI all rights reserved.</p>
             </div>
         </div>
     );

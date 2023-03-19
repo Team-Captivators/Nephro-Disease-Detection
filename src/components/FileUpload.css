@@ -2,7 +2,12 @@
     margin: 4rem 6rem;
     border: 4px solid;
     padding: 10px;
-    box-shadow: 5px 10px;
+    box-shadow: 4px 8px;
+}
+
+.fileborder h1{
+    font-size: 3.5rem;
+    font-weight: bold;
 }
 
 .upload-card{
@@ -15,26 +20,34 @@
 
 .heading{
     font-size: 2rem;
-    font-weight: 600;
-    padding-bottom: 10px;
+    font-weight: 550;
+    padding-top: 15px;
+    padding-bottom: 25px;
 }
 
 .upload-card-header {
-    margin-top: 12px;
-    font-size: 1.8rem;
+    margin-top: 18px;
+    font-size: 2rem;
     font-weight: 700;
     color: rgb(227, 48, 48);
 }
 
 .list-group-item {
-    font-size: 1.1rem;
-    font-weight: 400;
+    padding-top: 15px;
+    font-size: 1.3rem;
     line-height: 2.0;
     list-style-type: none;
 }
 
-ol {
-    list-style-type: square;
+.col-8 {
+    border-style: dotted;
+    margin-left: 220px;
+    padding: 10px 0px;
+}
+
+.col-4 {
+    margin-top: 30px;
+    padding-left: 600px; 
 }
 
 .upload-btn{
@@ -49,7 +62,7 @@ ol {
     font-weight: 500;
     line-height: 2;
     outline: transparent;
-    padding: 0 1rem;
+    padding: 0.25rem 2rem;
     text-align: center;
     text-decoration: none;
     transition: box-shadow .2s ease-in-out;
@@ -57,7 +70,6 @@ ol {
     -webkit-user-select: none;
     touch-action: manipulation;
     white-space: nowrap;
-    margin-top: 20px;
 }
 
 .upload-btn:not([disabled]):focus {

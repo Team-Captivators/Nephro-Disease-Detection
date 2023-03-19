@@ -20,21 +20,43 @@ h4{
 }
 
 .footer-logo{
-    padding-top: 5px;
-    height: 110px;
+    padding-top: 10px;
+    height: 120px;
 }
 
 .firstcol p{
-    padding-top: 20px;
+    padding-top: 15px;
     font-weight: bold;
     color: #fff;
 }
 
-a{
+.firstcol .footer-name{
+    text-align: center;
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.secondcol h4{
+    font-weight: bold;
+}
+
+.thirdcol h4{
+    font-weight: bold;
+}
+
+.secondcol a{
     text-decoration: none;
     color: #fafafa;
     padding-bottom: 0.4rem;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+}
+
+.thirdcol a{
+    text-decoration: none;
+    color: #fafafa;
+    padding-bottom: 0.4rem;
+    font-size: 1.3rem;
 }
 
 a:hover{
@@ -46,8 +68,10 @@ a:hover{
 }
 
 .frowtwo {
-    color: #ffffff;
-    background-color: #000;
+    padding-top: 6px;
+    color: #000000;
+    background-color: #ffffff;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 850px) {

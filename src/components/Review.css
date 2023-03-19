@@ -1,12 +1,18 @@
 .review {
-    display: flex;
-    justify-content: center; 
-    margin-top: 50px;
-    padding-bottom: 30px;
+  display: flex;
+  justify-content: center; 
+  margin-top: 50px;
+  padding-bottom: 30px;
+}
+
+.review h1{
+  font-size: 3.5rem;
+  color: #1a4ccc;
+  font-weight: bold;
 }
 
 p{
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: #2a2a2a;
 }
 

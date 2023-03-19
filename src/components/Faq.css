@@ -1,7 +1,9 @@
-h1{
-    font-size: 3rem;
+.accordion h1{
+    font-size: 3.5rem;
     text-align: center;
     color: #1a4ccc;
+    font-weight: bold;
+    padding-bottom: 25px;
 }
 
 .wrapper {
@@ -13,6 +15,7 @@ h1{
 
 .accordion {
     width: 1200px;
+    
 }
 
 span{
@@ -20,8 +23,9 @@ span{
 }
 
 .item {
-    background: #eaebf7;
-    border-style: inset;
+    background: #efeff5;
+    border-style: groove;
+    border-color: #678df0;
     border-radius: 8px;
     margin-bottom: 18px;
     padding: 10px 20px;
@@ -29,7 +33,6 @@ span{
 
 .title {
     color: #000000;
-    font-size: 0.9rem;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -38,7 +41,8 @@ span{
 
 .faq-content {
     color: #2a2a2a;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    text-indent: 80px;
     max-height: 0;
     overflow: hidden;
     text-align: justify;
@@ -46,7 +50,6 @@ span{
 }
 
 .faq-content.show{
-    
     height: auto;
     max-height: 9999px;
     transition: all 0.5s cubic-bezier(1,0,1,0);

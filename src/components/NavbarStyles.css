@@ -21,13 +21,6 @@
     font-weight: 650;
 }
 
-.navbar-logo{
-    color: #222;
-    width: 7%;
-    padding-top: 10px;
-    margin-left: -350px;
-}
-
 .nav-menu{
     display: grid;
     grid-template-columns: repeat(6, auto);
@@ -39,7 +32,7 @@
 .nav-links{
     text-decoration: none;
     color: #222;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 600;
     padding: 0.7rem 1rem;
     white-space: nowrap;
