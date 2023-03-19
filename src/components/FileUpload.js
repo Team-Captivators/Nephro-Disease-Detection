@@ -55,19 +55,19 @@ const FileUpload = () => {
                 sample_type: "Computerized Tomography (CT)",
                 disease: "Renal Cell Carcinoma (Tumors)",
                 result: arrayResponse[0],
-                Confidence_level: arrayResponse[3],
+                Confidence_level: "Learn more - https://www.urologyhealth.org/urology-a-z/k/kidney-cancer",
             },
             {
                 sample_type: "Computerized Tomography (CT)",
                 disease: "Nephrolithiasis (Stones)",
                 result: arrayResponse[1],
-                Confidence_level: arrayResponse[4],
+                Confidence_level: "Learn more - https://www.urologyhealth.org/urology-a-z/k/kidney-stones",
             },
             {
                 sample_type: "Computerized Tomography (CT)",
                 disease: "Renal Cysts",
                 result: arrayResponse[2],
-                Confidence_level: arrayResponse[5],
+                Confidence_level: "Learn more - https://www.kidney.org.uk/kidney-cystsp",
             },
           ];
           setMessage((prevMessage) => ([

@@ -18,7 +18,7 @@ export default function Table({ data }) {
             },
             {
                 accessorKey: 'Confidence_level',
-                header: 'Confidence Score',
+                header: 'Description',
             },
         ],
         [],
