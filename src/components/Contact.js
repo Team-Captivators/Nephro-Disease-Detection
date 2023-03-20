@@ -38,7 +38,7 @@ const Contact = () => {
             <input type="text" name="user_name" placeholder="Name" required/>
             <input type="email" name="user_email" placeholder="Email" required/>
             <textarea name="message" placeholder="Message" rows="4" required></textarea>
-            <button role="button"><span class="text">Send Message</span></button>
+            <button><span class="text">Send Message</span></button>
             <div className="row">{result ? <Result /> : null}</div>
             </form>
         </div>

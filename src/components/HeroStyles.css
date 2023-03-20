@@ -21,10 +21,11 @@ img {
 }
 
 .hero-text h1 {
-  font-size: 5.5rem;
+  font-size: 5rem;
   font-weight: 800;
   letter-spacing: 5px;
   background: #1a4ccc;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

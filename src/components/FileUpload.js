@@ -10,21 +10,13 @@ const FileUpload = () => {
   const [message, setMessage] = useState([]);
   const [convertError, setConvertError] = useState("");
   const [base64String, setBase64String] = useState(null);
-  // const [fileInfos, setFileInfos] = useState([]);
   const progressInfosRef = useRef(null);
-
-  // useEffect(() => {
-    //     UploadService.getFiles().then((response) => {
-    //         setFileInfos(response.data);
-    //     });
-    // }, []);
 
   const selectFiles = (event) => {
     setSelectedFiles(event.target.files);
 
     const reader = new FileReader();
 
-    // Convert to base64
     reader.readAsDataURL(event.target.files[0]);
     reader.onload = () => {
         setBase64String(reader.result.split(",")[1]);
@@ -33,6 +25,7 @@ const FileUpload = () => {
         setConvertError(error.toString);
     };
     setProgressInfos({ val: [] });
+    setMessage("");
   };
 
   const fileUpload = (idx, file) => {
@@ -43,6 +36,7 @@ const FileUpload = () => {
             (100 * event.loaded) / event.total
         );
         setProgressInfos({val: _progressInfos});
+        setMessage("");
         setMessage((prevMessage) => ([
             ...prevMessage,
             "Uploading & verifying file: " + file.name + ". This may take a few minutes."
@@ -50,24 +44,34 @@ const FileUpload = () => {
       })
       .then((response) => {
         const arrayResponse = JSON.parse(response.data.replace(/'/g, "\""));
+        setMessage("");
           const data = [
             {
                 sample_type: "Computerized Tomography (CT)",
                 disease: "Renal Cell Carcinoma (Tumors)",
                 result: arrayResponse[0],
-                Confidence_level: "Learn more - https://www.urologyhealth.org/urology-a-z/k/kidney-cancer",
+                Confidence_level: 
+                <p className="refText">Abnormal growths/ Tumors in kidneys can be benign or cancerous. 
+                  <a className="refText a" href="https://www.urologyhealth.org/urology-a-z/k/kidney-cancer"> Find out more.</a>
+                </p>,
             },
             {
                 sample_type: "Computerized Tomography (CT)",
                 disease: "Nephrolithiasis (Stones)",
                 result: arrayResponse[1],
-                Confidence_level: "Learn more - https://www.urologyhealth.org/urology-a-z/k/kidney-stones",
+                Confidence_level: 
+                <p className="refText">A kidney stone is a hard object that is made from chemicals in the urine.
+                  <a className="refText a" href="https://www.urologyhealth.org/urology-a-z/k/kidney-stones"> Find out more.</a>
+                </p>,
             },
             {
                 sample_type: "Computerized Tomography (CT)",
                 disease: "Renal Cysts",
                 result: arrayResponse[2],
-                Confidence_level: "Learn more - https://www.kidney.org.uk/kidney-cystsp",
+                Confidence_level: 
+                <p className="refText">Kidney cysts are round pouches of fluid that form on or in the kidneys.
+                  <a className="refText a" href="https://www.kidney.org.uk/kidney-cystsp"> Find out more.</a>
+                </p>,
             },
           ];
           setMessage((prevMessage) => ([
@@ -78,6 +82,7 @@ const FileUpload = () => {
       .catch((error) => {
         _progressInfos[idx].percentage = 0;
         setProgressInfos({val: _progressInfos});
+        setMessage("");
         setMessage((prevMessage) => ([
             ...prevMessage,
             "Verification failed: " + JSON.stringify(error.response.data)
@@ -85,6 +90,7 @@ const FileUpload = () => {
         ]));
       });
     } else {
+      setMessage("");
       setMessage((prevMessage) => ([
           ...prevMessage,
           "Verification failed: Invalid file format!",
@@ -101,43 +107,12 @@ const FileUpload = () => {
       }
 
       files.map((file, i) => fileUpload(i, file));
-      // const uploadPromises = files.map((file, i) => fileUpload(i, file));
-      // Promise.all(uploadPromises)
-      //     .then(() => {
-      //         UploadService.getFiles()
-      //
-      //     })
-      //     .catch((error) => {
-      //         setMessage((prevMessage) => ([
-      //             ...prevMessage,
-      //             "Error: " + error + "."
-      //         ]));
-      //     });
-      //
   };
 
   return (
     <div className="fileborder" id="uploadLink">
       <h1>Experience Now</h1>
       <div className="heading">Precise Diagnosis for Optimal Health</div>
-      {progressInfos && progressInfos.val.length > 0 &&
-        progressInfos.val.map((progressInfo, index) => (
-          <div className="mb-2" key={index}>
-            <span>{progressInfo.fileName}</span>
-            <div className="progress">
-              <div
-                  className="progress-bar progress-bar-info"
-                  role="progressbar"
-                  aria-valuenow={progressInfo.percentage}
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style={{ width: progressInfo.percentage + "%" }}
-              >
-                  {progressInfo.percentage}%
-              </div>
-            </div>
-          </div>
-        ))}
 
         <div className="my-3">
           <div className="col-8">
@@ -156,6 +131,25 @@ const FileUpload = () => {
             </button>
           </div>
         </div>
+    
+        {progressInfos && progressInfos.val.length > 0 &&
+        progressInfos.val.map((progressInfo, index) => (
+          <div className="mb-2" key={index}>
+            {/* <span>{progressInfo.fileName}</span> */}
+            <div className="progress">
+              <div
+                  className="progress-bar progress-bar-info"
+                  role="progressbar"
+                  aria-valuenow={progressInfo.percentage}
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style={{ width: progressInfo.percentage + "%" }}
+              >
+                  {progressInfo.percentage}%
+              </div>
+            </div>
+          </div>
+        ))}
 
         {message.length > 0 && (
           <div className="alert alert-secondary" role="alert">

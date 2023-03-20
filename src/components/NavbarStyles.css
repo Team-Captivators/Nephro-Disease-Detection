@@ -9,7 +9,7 @@
     height: 80px;
     border-radius: 13px;
     position: fixed;
-    top: 20px;
+    top: 10px;
     left: 50%;
     transform: translate(-50%);
     z-index: 9999;
@@ -19,6 +19,7 @@
     color: #1a4ccc;
     font-size: 2rem;
     font-weight: 650;
+    text-decoration: none;
 }
 
 .nav-menu{
