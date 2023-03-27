@@ -17,7 +17,7 @@
 
 .navbar-logo-name{
     color: #1a4ccc;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 650;
     text-decoration: none;
 }
@@ -33,7 +33,7 @@
 .nav-links{
     text-decoration: none;
     color: #222;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 600;
     padding: 0.7rem 1rem;
     white-space: nowrap;

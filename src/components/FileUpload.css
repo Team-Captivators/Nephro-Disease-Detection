@@ -1,6 +1,19 @@
 .fileborder{
-    margin: 4rem 6rem;
-    padding: 10px;
+    background-color: whitesmoke;
+    padding-bottom: 50px;
+}
+
+.mb-2 {
+    padding: 2% 9% 0 12%;
+}
+
+.tm_dcv {
+    padding: 0 9% 0 12%;
+}
+
+.uploader_section {
+    display: flex;
+    margin-left: 2.5rem;
 }
 
 .refText, refText a {
@@ -10,47 +23,80 @@
 }
 
 .fileborder h1{
-    font-size: 3rem;
+    text-align: left;
+    margin: 0 0 0 6%;
+    padding-top: 5%;
     font-weight: bold;
     color: #1a4ccc;
 }
 
 .upload-card{
-    margin-top: 20px;
-    border: 3px solid #1a4ccc;
-    padding: 8px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 40.5%;
+    border-radius: 1rem;
+    box-shadow: 0 5px 25px 2px rgba(0, 0, 0, 0.11);
+    border-radius: 1rem;
+    background-color:#FFFFFF;
 }
 
 .heading{
     font-size: 2rem;
     font-weight: 550;
-    padding-top: 15px;
-    padding-bottom: 25px;
+    padding: 0 0 20px 7%;
+}
+
+.upld_img {
+    display: flex;
+    margin-top: 2%;
+    margin-right: 23%;
+    height: 55%;
+    width: 50%;
+}
+
+.btn-default-p-0 {
+    margin-top: 3%;
+    margin-left: 15%;
 }
 
 .upload-card-header {
-    margin-top: 18px;
-    font-size: 2rem;
+    text-align: center;
+    margin: 3% 0 0 2%;
+    padding-bottom: 2%;
+    font-size: 1.5rem;
     font-weight: 700;
     color: rgb(227, 48, 48);
 }
 
 .list-group-item {
-    padding-top: 15px;
-    font-size: 1.0rem;
-    line-height: 2.0;
-    list-style-type: none;
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 7%;
+}
+
+.list-group-item li {
+    margin: 2%;
+    padding: 1% 3% 0 3%;
+}
+
+.my-3 {
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
 }
 
 .col-8 {
-    border-style: dotted;
-    margin-left: 220px;
-    padding: 10px 0px;
+    border-style: dashed;
+    border-color:rgba(0, 0, 0, 0.5);
+    
+    border-radius: 1rem;
+    margin-left: 20%;
+    padding: 0 0 3% 0;
 }
 
 .col-4 {
-    margin-top: 30px;
-    padding-left: 600px; 
+    margin-top: 5%; 
+    margin-left: 33%;
 }
 
 .upload-btn{
@@ -61,7 +107,7 @@
     cursor: pointer;
     display: inline-block;
     font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 500;
     line-height: 2;
     outline: transparent;

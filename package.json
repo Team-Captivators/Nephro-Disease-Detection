@@ -1,11 +1,12 @@
 {
-  "name": "react-app",
-  "version": "0.1.0",
+  "name": "nephroai",
+  "version": "2.0.0",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@mui/icons-material": "^5.11.11",
     "@mui/material": "^5.11.13",
     "@testing-library/jest-dom": "^5.16.5",
@@ -17,7 +18,6 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
-    "react-dropzone": "^14.2.3",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.8.1",
     "react-router-hash-link": "^2.4.3",

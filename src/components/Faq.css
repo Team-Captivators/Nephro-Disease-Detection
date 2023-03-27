@@ -1,24 +1,26 @@
+.wrapper {
+    display: flex;
+    background-color: whitesmoke;
+}
+
 .accordion h1{
-    font-size: 3.5rem;
-    text-align: center;
+    font-size: 2.5rem;
+    text-align: left;
     color: #1a4ccc;
     font-weight: bold;
     padding-bottom: 25px;
 }
 
-.wrapper {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
 .accordion {
-    width: 1200px;
+    margin: 4rem 6rem;
 }
 
 span{
-    font-size: 2rem;
+    font-size: 1.3rem;
+}
+
+.qa_title {
+    font-size: 1.2rem;
 }
 
 .item {
@@ -26,8 +28,8 @@ span{
     border-style: groove;
     border-color: #678df0;
     border-radius: 8px;
-    margin-bottom: 18px;
-    padding: 10px 20px;
+    margin-bottom: 15px;
+    padding: 8px 18px;
 }
 
 .title {
@@ -40,7 +42,7 @@ span{
 
 .faq-content {
     color: #2a2a2a;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-indent: 80px;
     max-height: 0;
     overflow: hidden;

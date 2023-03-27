@@ -45,7 +45,7 @@ export default function Table({ data }) {
             {
                 accessorKey: 'Confidence_level',
                 header: 'Description',
-                size: 500,
+                size: 400,
             },
         ],
         [],

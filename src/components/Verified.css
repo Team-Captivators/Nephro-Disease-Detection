@@ -6,8 +6,9 @@
 .verified h1{
     text-align: start;
     color: #1a4ccc;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
+    margin-bottom: 3%;
 }
 
 .verified .firstrow{
@@ -26,14 +27,15 @@
     width: 32%;
     text-align: start;
     box-shadow: 0 5px 25px 2px rgba(0, 0, 0, 0.11);
-    border-radius: 7px;
+    border-radius: 1rem;
     cursor: pointer;
     padding: 1rem .8rem;
 }
 
 .verified-card h4{
+    margin: 0 3% 3% 3%;
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     padding: .9rem 0 .2rem 0;
 }
 
@@ -42,8 +44,8 @@
 }
 
 .verified-card p{
-    font-size: 1.2rem;
-    padding-top: 5px;
+    margin: 0 5% 0 3%;
+    font-size: 1.1rem;
     text-align: justify;
 }
 

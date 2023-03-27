@@ -3,6 +3,7 @@ import UploadService from "./FileUploadService";
 import Table from "../table-common";
 import './FileUpload.css';
 import "bootstrap/dist/css/bootstrap.min.css";
+import IMG_S00 from "../images/upload.png"
 
 const FileUpload = () => {
   const [selectedFiles, setSelectedFiles] = useState([]);
@@ -103,7 +104,7 @@ const FileUpload = () => {
       const files = Array.from(selectedFiles);
       let _progressInfos = files.map(file => ({ percentage: 0, fileName: file.name }));
       progressInfosRef.current = {
-          val: _progressInfos,
+        val: _progressInfos,
       }
 
       files.map((file, i) => fileUpload(i, file));
@@ -111,39 +112,50 @@ const FileUpload = () => {
 
   return (
     <div className="fileborder" id="uploadLink">
-      <h1>Experience Now</h1>
-      <div className="heading">Precise Diagnosis for Optimal Health</div>
+        <h1 className="heading">Submit Your CT Report</h1>
+        <div className="uploader_section">
+          <div className="my-3">
 
-        <div className="my-3">
-          <div className="col-8">
-            <label className="btn btn-default p-0">
+            <div className="col-8">
+              <img className="upld_img" src={IMG_S00} height='' width='' alt="" />
+              <label className="btn-default-p-0">
                 <input type="file" multiple onChange={selectFiles} />
-            </label>
+              </label>
+              <div className="col-4">
+                <button
+                  className="upload-btn"
+                  disabled={!selectedFiles}
+                  onClick={uploadFiles}
+                >
+                  Upload
+                </button>
+              </div>
+            </div>
+            
           </div>
 
-          <div className="col-4">
-            <button
-                className="upload-btn"
-                disabled={!selectedFiles}
-                onClick={uploadFiles}
-            >
-                Upload
-            </button>
+          <div className="upload-card">
+            <div className="upload-card-header">Instructions & Guidelines</div>
+              <ol className="list-group-item">
+                <li>CT scan image should be in a supported file format, such as <b>JPG</b>, <b>JPEG</b>, and <b>PNG</b>.</li>
+                <li>The image size range should be between <b>80KB</b> and <b>5MB</b>.</li>
+                <li>Do not refresh the page while the process is underway.</li>
+                <li>The result is provisional and shall not take any decision unless an advice from a medical professional.</li>
+              </ol>
           </div>
         </div>
-    
+
         {progressInfos && progressInfos.val.length > 0 &&
         progressInfos.val.map((progressInfo, index) => (
           <div className="mb-2" key={index}>
-            {/* <span>{progressInfo.fileName}</span> */}
             <div className="progress">
               <div
-                  className="progress-bar progress-bar-info"
-                  role="progressbar"
-                  aria-valuenow={progressInfo.percentage}
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style={{ width: progressInfo.percentage + "%" }}
+                className="progress-bar progress-bar-info"
+                role="progressbar"
+                aria-valuenow={progressInfo.percentage}
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style={{ width: progressInfo.percentage + "%" }}
               >
                   {progressInfo.percentage}%
               </div>
@@ -151,24 +163,14 @@ const FileUpload = () => {
           </div>
         ))}
 
-        {message.length > 0 && (
-          <div className="alert alert-secondary" role="alert">
-            {message.map((item, i) => {
+        <div className="tm_dcv">
+          {message.length > 0 && (
+            <div className="alert alert-secondary" role="alert">
+              {message.map((item, i) => {
                 return <p key={i}>{item}</p>;
-            })}
-          </div>
-        )}
-
-        <div className="upload-card">
-          <div className="upload-card-header">Guidelines</div>
-          <ul className="list-group-item">
-            <li>Before uploading a CT scan, make sure it is in a supported file format, such as <b>JPG</b>, <b>JPEG</b>, and <b>PNG</b>.</li>
-            <li>The maximum file size for CT scans uploaded to the web app is <b>5MB</b> and minimum file size is <b>80KB</b>.</li>
-            <li>Do not refresh the page while the process is underway.</li>
-            <li>To ensure accurate predictions, ensure that the CT scan is of good quality and resolution.</li>
-            <li>The predictions are based on statistical models and should not be considered as a definite diagnosis.</li>
-            <li>Results should be discussed with a doctor or medical professional to determine the next steps for diagnosis and treatment.</li>
-          </ul>
+              })}
+            </div>
+          )}
         </div>
     </div>
   );

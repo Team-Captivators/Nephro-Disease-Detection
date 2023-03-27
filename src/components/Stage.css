@@ -11,21 +11,21 @@
 
 .stagedata-card{
     padding: 30px 50px;
-    border-style: solid;
-    border-radius: 20px;
+    border-style: dotted;
+    border-radius: 15px;
     border-width: 4px;
 }
 
 .stagedata-card h4{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #2998f9;
     text-align: start;
     padding-top: 2px;
     font-weight: bold;
 }
 
-.stagedata-card h1{
-    font-size: 3rem;
+.phrase{
+    font-size: 2rem;
     color: #1a4ccc;
     text-align: center;
     font-weight: bold;
@@ -43,9 +43,9 @@
 }
 
 .stagecardtwo{
-    padding-top: 50px;
     display: flex;
     justify-content: space-between;
+    padding: 50px 50px 0 50px;
 }
 
 .stagecardtwo h3{

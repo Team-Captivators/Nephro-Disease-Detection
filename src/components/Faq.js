@@ -18,7 +18,7 @@ function Faq(){
                 {data.map((item, i) => (
                     <div className="item">
                         <div className="title" onClick={() => toggle(i)}>
-                            <h2>{item.question}</h2>
+                            <h4 className="qa_title">{item.question}</h4>
                             <span>{selected === i ? '-' : '+'}</span>
                         </div>
                         <div className={selected === i ? 'faq-content show' : 'faq-content'}>{item.answer}</div>

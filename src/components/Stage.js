@@ -8,7 +8,7 @@ function Stage(){
                 <div className="top-text">
                     <StageData
                         icon="fa-solid fa-user-doctor"
-                        mainheading="Stage 1"
+                        mainheading="Research"
                         heading="DISEASE DETECTION"
                         text1="Our disease detection tool is based on advanced AI techniques, including deep learning algorithms that analyze CT scans for nephrological diseases. The tool processes large amounts of medical data and uses complex mathematical models to identify the underlying patterns and make predictions on the report using deep learning."
                         text2="The result is a highly accurate and fast disease detection tool that provides you with valuable insights into your patients' health. Our commitment to using the latest AI technology ensures that our tool is always at the forefront of medical advancements, providing you with the best possible results. However, it is recommended to consult a medical specialists for treatments. Since the technology is under the research stage, there may be circumstances of innacurate results."
@@ -26,7 +26,7 @@ function Stage(){
             </div>
             <div className="stagecardtwo">
                 <div className="col1">
-                    <h3>99%</h3>
+                    <h3>98%</h3>
                     <p>Accuracy rate</p>
                 </div>
                 <div className="col2">
