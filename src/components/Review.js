@@ -6,7 +6,6 @@ import { Avatar } from "@mui/material";
 import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
 
 const PreviousBtn = (props) => {
-  console.log(props);
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
@@ -31,9 +30,6 @@ const Review = () => {
           <Card img="https://images.unsplash.com/photo-1583864697784-a0efc8379f70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWFsZSUyMHByb2ZpbGV8ZW58MHx8MHx8&w=1000&q=80"
           description="I was diagnosed with Polycystic Kidney Disease and was afraid of the long and complicated process of finding the right treatment. The CT scan tool made it so easy for me to get a clear diagnosis and move forward with my treatment plan. I am so grateful for this tool and highly recommend it to anyone with nephrological concerns."
           name="~ Jacob Brown ~"/>
-          <Card img="https://techtrickseo.com/wp-content/uploads/2019/11/asfDFHJDKFHDFJH.jpg" 
-          description="I was experiencing long-lasting pain in my back and loss of appetite, and wasn't sure what was causing it. The CT scan tool quickly identified Renal Adenoma, and I was able to receive a comprehensive report that helped me understand my condition and the next steps I need to take. I am so thankful for this tool."
-          name="~ Adriana Williams ~"/>
           <Card img="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?cs=srgb&dl=pexels-italo-melo-2379004.jpg&fm=jpg" 
           description="I was skeptical about using an online CT scan tool at first, but I am so glad I did. The results were just as accurate as if I had gone to the doctor, and I was able to receive my report within a matter of minutes. I highly recommend this tool to anyone looking for a convenient and reliable way to diagnose nephrological diseases."
           name="~ Ethan Tremblay ~"/>

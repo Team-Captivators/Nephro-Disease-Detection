@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import UploadService from "./FileUploadService";
-import Table from "../table-common";
+import html2canvas from 'html2canvas';
+import jsPDF from 'jspdf';
 import './FileUpload.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import IMG_S00 from "../images/upload.png"
@@ -29,6 +30,23 @@ const FileUpload = () => {
     setMessage("");
   };
 
+  const printDocument = async () => {
+    const data = document.getElementsByClassName('table_nx')[0];
+
+    await html2canvas(data)
+      .then((canvas) => {
+        const imgData = canvas.toDataURL('image/png', 1.0);
+        const pdf = new jsPDF();
+
+        const imgProperties = pdf.getImageProperties(imgData);
+        const pdfWidth = pdf.internal.pageSize.getWidth();
+        const pdfHeight = (imgProperties.height * pdfWidth) / imgProperties.width;
+
+        pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
+        pdf.save("Report.pdf");
+      })
+  }
+
   const fileUpload = (idx, file) => {
     let _progressInfos = [...progressInfosRef.current.val];
     if (convertError === "") {
@@ -46,39 +64,68 @@ const FileUpload = () => {
       .then((response) => {
         const arrayResponse = JSON.parse(response.data.replace(/'/g, "\""));
         setMessage("");
-          const data = [
-            {
-                sample_type: "Computerized Tomography (CT)",
-                disease: "Renal Cell Carcinoma (Tumors)",
-                result: arrayResponse[0],
-                Confidence_level: 
-                <p className="refText">Abnormal growths/ Tumors in kidneys can be benign or cancerous. 
-                  <a className="refText a" href="https://www.urologyhealth.org/urology-a-z/k/kidney-cancer"> Find out more.</a>
-                </p>,
-            },
-            {
-                sample_type: "Computerized Tomography (CT)",
-                disease: "Nephrolithiasis (Stones)",
-                result: arrayResponse[1],
-                Confidence_level: 
-                <p className="refText">A kidney stone is a hard object that is made from chemicals in the urine.
-                  <a className="refText a" href="https://www.urologyhealth.org/urology-a-z/k/kidney-stones"> Find out more.</a>
-                </p>,
-            },
-            {
-                sample_type: "Computerized Tomography (CT)",
-                disease: "Renal Cysts",
-                result: arrayResponse[2],
-                Confidence_level: 
-                <p className="refText">Kidney cysts are round pouches of fluid that form on or in the kidneys.
-                  <a className="refText a" href="https://www.kidney.org.uk/kidney-cystsp"> Find out more.</a>
-                </p>,
-            },
-          ];
+        setMessage((prevMessage) => ([
+            ...prevMessage,
+          <div className='table_nx'>
+            <table>
+              <tr className='table_headers'>
+                <th className='sample_tp'>Sample Type</th>
+                <th className='sample_dn'>Disease Name</th>
+                <th className='sample_pr'>Prediction Result</th>
+                <th className='sample_dr'>Description</th>
+              </tr>
+              <tr className="table_data a1">
+                <td>Computerized Tomography (CT)</td>
+                <td>Renal Cell Carcinoma (Tumors)</td>
+                <td> 
+                  <p style={{ backgroundColor: arrayResponse[0] === 'Negative' ? 'green' : 'red' }} className='result_fce'>
+                      {arrayResponse[0]} 
+                  </p>
+                </td>
+                <td>
+                  <p className="refText">Abnormal growths or Tumors in kidneys can be benign or cancerous. 
+                    <a className="refText a" href="https://www.urologyhealth.org/urology-a-z/k/kidney-cancer"> Find out more.</a>
+                  </p>
+                </td>
+              </tr>
+              <tr className="table_data a2">
+                <td>Computerized Tomography (CT)</td>
+                <td>Nephrolithiasis (Stones)</td>
+                <td className="tm_data">
+                  <p style={{ backgroundColor: arrayResponse[1] === 'Negative' ? 'green' : 'red' }} className='result_fce'>
+                      {arrayResponse[1]} 
+                  </p>
+                </td>
+                <td>
+                  <p className="refText">A kidney stone is a hard object that is made from chemicals in the urine.
+                    <a className="refText a" href="https://www.urologyhealth.org/urology-a-z/k/kidney-stones"> Find out more.</a>
+                  </p>
+                </td>
+              </tr>
+              <tr className="table_data a3">
+                <td>Computerized Tomography (CT)</td>
+                <td>Renal Cysts</td>
+                <td>
+                  <p style={{ backgroundColor: arrayResponse[2] === 'Negative' ? 'green' : 'red' }} className='result_fce'>
+                      {arrayResponse[2]} 
+                  </p>
+                </td>
+                <td>
+                  <p className="refText">Kidney cysts are round pouches of fluid that form on or in the kidneys.
+                    <a className="refText a" href="https://www.kidney.org.uk/kidney-cystsp"> Find out more.</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        ]));
           setMessage((prevMessage) => ([
-              ...prevMessage,
-              < Table data={data}/>
-          ]));
+            ...prevMessage,
+            <p className="table_data a4">Please click 
+              <button onClick={printDocument} className='pdf_button'>here</button>
+              to download the report.
+            </p>
+        ]));
       })
       .catch((error) => {
         _progressInfos[idx].percentage = 0;
@@ -96,9 +143,8 @@ const FileUpload = () => {
           ...prevMessage,
           "Verification failed: Invalid file format!",
       ]));
-    }
-    setMessage([]);
-    };
+    } setMessage([]);
+  };
 
     const uploadFiles = () => {
       const files = Array.from(selectedFiles);
@@ -115,7 +161,6 @@ const FileUpload = () => {
         <h1 className="heading">Submit Your CT Report</h1>
         <div className="uploader_section">
           <div className="my-3">
-
             <div className="col-8">
               <img className="upld_img" src={IMG_S00} height='' width='' alt="" />
               <label className="btn-default-p-0">
@@ -131,12 +176,11 @@ const FileUpload = () => {
                 </button>
               </div>
             </div>
-            
           </div>
 
-          <div className="upload-card">
-            <div className="upload-card-header">Instructions & Guidelines</div>
-              <ol className="list-group-item">
+          <div className="upload-card a1">
+            <div className="upload-card-header a1">Instructions & Guidelines</div>
+              <ol className="list-group-item a1">
                 <li>CT scan image should be in a supported file format, such as <b>JPG</b>, <b>JPEG</b>, and <b>PNG</b>.</li>
                 <li>The image size range should be between <b>80KB</b> and <b>5MB</b>.</li>
                 <li>Do not refresh the page while the process is underway.</li>
@@ -144,6 +188,20 @@ const FileUpload = () => {
               </ol>
           </div>
         </div>
+
+        <div className="upload-card a2">
+            <div className="upload-card-header a2">
+              <div className="upload_panel">
+                Limitations
+              </div>
+            </div>
+            <ol className="list-group-item a2">
+              <li>There can be circumstances where the result can be inaccurate or mispredicted.</li>
+              <li>A CT report that does not related to kidneys can also be misclassified.</li>
+              <li>The report cannot be used as a proof or any other evidence for nephrological disease diagnosis.</li>
+              <li>The result may be inaccurate if the image quality is poor or compressed.</li>
+            </ol>
+          </div>
 
         {progressInfos && progressInfos.val.length > 0 &&
         progressInfos.val.map((progressInfo, index) => (
@@ -167,7 +225,7 @@ const FileUpload = () => {
           {message.length > 0 && (
             <div className="alert alert-secondary" role="alert">
               {message.map((item, i) => {
-                return <p key={i}>{item}</p>;
+                return <p key={i} className="key_message">{item}</p>;
               })}
             </div>
           )}
