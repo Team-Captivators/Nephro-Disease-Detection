@@ -24,6 +24,11 @@ const Footer = () => {
                     <a href="#verifiedLink">Workflow</a>
                     <a href="#reviewLink">Reviews</a>
                 </div>
+                <div className="forthcol">
+                    <h4>KEEP CONNECTED</h4>   
+                    <a href="https://web.facebook.com/NephroAI/" className="socialmedia facebook"><i class="fa-brands fa-facebook"></i>Facebook</a>
+                    <a href="https://www.instagram.com/nephroai/" className="socialmedia instagram"><i class="fa-brands fa-instagram"></i>Instagram</a>
+                </div>
             </div>
             <div className="frowtwo">
                 <p>Copyright © 2023 Nephro AI all rights reserved.</p>
