@@ -160,11 +160,12 @@ const FileUpload = () => {
     <div className="fileborder" id="uploadLink">
         <h1 className="heading">Submit Your CT Report</h1>
         <div className="uploader_section">
+
           <div className="my-3">
-            <div className="col-8">
+            <div className="col-dn">
               <img className="upld_img" src={IMG_S00} height='' width='' alt="" />
               <label className="btn-default-p-0">
-                <input type="file" multiple onChange={selectFiles} />
+                <input className="uploader_media" type="file" multiple onChange={selectFiles} />
               </label>
               <div className="col-4">
                 <button
@@ -178,30 +179,24 @@ const FileUpload = () => {
             </div>
           </div>
 
-          <div className="upload-card a1">
-            <div className="upload-card-header a1">Instructions & Guidelines</div>
-              <ol className="list-group-item a1">
-                <li>CT scan image should be in a supported file format, such as <b>JPG</b>, <b>JPEG</b>, and <b>PNG</b>.</li>
-                <li>The image size range should be between <b>80KB</b> and <b>5MB</b>.</li>
-                <li>Do not refresh the page while the process is underway.</li>
-                <li>The result is provisional and shall not take any decision unless an advice from a medical professional.</li>
-              </ol>
-          </div>
-        </div>
-
-        <div className="upload-card a2">
-            <div className="upload-card-header a2">
-              <div className="upload_panel">
-                Limitations
+          <div className="div_instructions">
+            <div className="upload-card a1">
+              <div className="upload-card-header a1">Guidelines & Limitations</div>
+                <ol className="list-group-item a1">
+                  <li>CT scan image should be in a supported file format, such as <b>JPG</b>, <b>JPEG</b>, and <b>PNG</b>.</li>
+                  <li>The image size range should be between <b>80KB</b> and <b>5MB</b>.</li>
+                  <li>Do not refresh the page while the process is underway.</li>
+                  <li>The result is provisional and shall not take any decision unless an advice from a medical professional.</li>
+                  <li>There can be circumstances where the result can be inaccurate or mispredicted.</li>
+                  <li>A CT report that does not related to kidneys can also be misclassified.</li>
+                  <li>The report cannot be used as a proof or any other evidence for nephrological disease diagnosis.</li>
+                  <li>The result may be inaccurate if the image quality is poor or compressed.</li>
+                </ol>
               </div>
-            </div>
-            <ol className="list-group-item a2">
-              <li>There can be circumstances where the result can be inaccurate or mispredicted.</li>
-              <li>A CT report that does not related to kidneys can also be misclassified.</li>
-              <li>The report cannot be used as a proof or any other evidence for nephrological disease diagnosis.</li>
-              <li>The result may be inaccurate if the image quality is poor or compressed.</li>
-            </ol>
           </div>
+        
+        </div>
+          
 
         {progressInfos && progressInfos.val.length > 0 &&
         progressInfos.val.map((progressInfo, index) => (

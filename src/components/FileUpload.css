@@ -4,7 +4,7 @@
 }
 
 .mb-2 {
-    padding: 2% 9% 0 12%;
+    padding: 0 6% 0 7.5%;
 }
 
 .key_message {
@@ -12,12 +12,12 @@
 }
 
 .tm_dcv {
-    padding: 0 9% 0 12%;
+    padding: 0 6% 0 7.5%;
 }
 
 .uploader_section {
     display: flex;
-    margin-left: 2.5rem;
+    margin-left: 5%;
 }
 
 .refText, .refText.a {
@@ -32,34 +32,33 @@
 
 .fileborder h1{
     text-align: left;
-    margin: 0 0 0 6%;
+    margin: 0 0 0 7.5%;
     padding-top: 5%;
     font-weight: bold;
     color: #1a4ccc;
 }
 
 .upload-card{
-    margin-top: 1%;
+    margin-top: 2%;
     margin-bottom: 1%;
-    width: 40.5%;
-    border-radius: 1rem;
     box-shadow: 0 5px 25px 2px rgba(0, 0, 0, 0.11);
     border-radius: 1rem;
     background-color:#FFFFFF;
+    margin-right: 10%;
 }
 
 .heading{
     font-size: 2rem;
     font-weight: 550;
-    padding: 0 0 20px 7%;
+    padding: 0 0 20px 0%;
 }
 
 .upld_img {
     display: flex;
-    margin-top: 2%;
-    margin-right: 23%;
-    height: 55%;
-    width: 50%;
+    margin-top: 7%;
+    margin-right: 13%;
+    height: 70%;
+    width: 70%;
 }
 
 .btn-default-p-0 {
@@ -154,15 +153,23 @@
 .my-3 {
     display: flex;
     flex-direction: column;
-    min-width: 50%;
+    width: 43%;
+    margin-right: 3%;
 }
 
-.col-8 {
+.col-dn {
     border-style: dashed;
     border-color:rgba(0, 0, 0, 0.5);
     border-radius: 1rem;
-    margin-left: 20%;
-    padding: 0 0 3% 0;
+    margin-left: 7%;
+    padding: 0 0 7% 0;
+    height: 95%;
+    width: 90%;
+}
+
+.uploader_media {
+    color: black;
+    font-weight: 300;
 }
 
 .col-4 {
@@ -170,10 +177,15 @@
     margin-left: 33%;
 }
 
-.upload-card.a2 {
-    margin-left: 12%;
-    width: 78.6%;
+.upload-card.a1 {
+    width: 95%;
     padding: 0.5% 0 1% 0;
+}
+
+.div_instructions {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 
 .upload_panel {
@@ -193,7 +205,7 @@
 
 .list-group-item.a2 li {
     margin: 1%;
-    padding: 0.5% 3% 0 1%;
+    padding: 1% 3% 0 2%;
 }
 
 .upload-btn{
