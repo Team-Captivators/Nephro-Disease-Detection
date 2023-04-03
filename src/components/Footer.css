@@ -109,9 +109,17 @@ a:hover{
     padding-bottom: 8px;
 }
 
+.facebook i {
+    margin-right: 6px;
+}
+
 .instagram{
     color: #eb36a5 ;
     text-decoration: none;
+}
+
+.instagram i {
+    margin-right: 8px;
 }
 
 @media screen and (max-width: 850px) {
