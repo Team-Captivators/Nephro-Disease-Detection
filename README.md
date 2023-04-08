@@ -1,71 +1,39 @@
-# Getting Started with Create React App
+# Nephro AI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Nephro AI is a website that uses CT scan images to identify kidney tumors, stones, and cysts among other diseases. Anyone can use the website because of how user-friendly it is. An open-source JavaScript library for building user interfaces, the React JS framework was used to create the Nephro AI website.
 
-## Available Scripts
+## Features
+•	Detection of multiple kidney diseases using CT scan images
+•	User-friendly interface
+•	Designed using React JS framework
+•	Home screen with a navigation bar designed with a logo on the left                side and menu items on the right
+•	"Get Started" button to access the content
+•	Brief explanation of disease detection provided on the home page
+•	Upload of an image from a CT scan
+•	Proper image format specified for uploading
+•	Instructions and directives provided
+•	Image size restrictions indicated (between 80 KB and 5 MB)
+•	Disease related to the uploaded image mentioned
+•	Resources provided for learning about the three diseases mentioned
+•	PDF report generation for the user
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+To get started with Nephro AI, follow these steps:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) 
-to view it in your browser.
+1. Visit the website https://www.nephroai.me.
+2. Click on the "Get Started" button to access the content.
+3. Upload an image from a CT scan in the proper format (between 80 KB and 5 MB).
+4. Follow the instructions and directives provided.
+5. The website will detect the disease related to the uploaded image and provide resources for learning about the disease.
+6. The user can also generate a PDF report of the detection results.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Future Work
 
-### `npm test`
+Potential projects for Nephro AI in the future include the analysis of symptoms.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Acknowledgements
 
-### `npm run build`
+We would like to thank our team members for their contributions to the project 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment]
-(https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Team MemberIIT No.J.J.Godwin20211156P.R. Marambe20210375M.A.C.R. Wijewardane20210107S.T.S.V. Surage20210322M.G.Y. Jayamadu20210304
