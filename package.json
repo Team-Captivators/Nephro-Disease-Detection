@@ -1,7 +1,7 @@
 {
   "name": "nephroai",
   "version": "2.0.0",
-  "private": true,
+  "homepage": "http://teamcaptivators.github.io/nephroaiweb",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@emotion/react": "^11.10.6",
