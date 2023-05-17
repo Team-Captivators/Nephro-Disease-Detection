@@ -3,19 +3,19 @@
 Nephro AI is a website that uses CT scan images to identify kidney tumors, stones, and cysts among other diseases. Anyone can use the website because of how user-friendly it is. An open-source JavaScript library for building user interfaces, the React JS framework was used to create the Nephro AI website.
 
 ## Features
-•	Detection of multiple kidney diseases using CT scan images
-•	User-friendly interface
-•	Designed using React JS framework
-•	Home screen with a navigation bar designed with a logo on the left side and menu items on the right
-•	"Get Started" button to access the content
-•	Brief explanation of disease detection provided on the home page
-•	Upload of an image from a CT scan
-•	Proper image format specified for uploading
-•	Instructions and directives provided
-•	Image size restrictions indicated (between 80 KB and 5 MB)
-•	Disease related to the uploaded image mentioned
-•	Resources provided for learning about the three diseases mentioned
-•	PDF report generation for the user
+- Detection of multiple kidney diseases using CT scan images
+- User-friendly interface
+- Designed using React JS framework
+- Home screen with a navigation bar designed with a logo on the left side and menu items on the right
+- "Get Started" button to access the content
+- Brief explanation of disease detection provided on the home page
+- Upload of an image from a CT scan
+- Proper image format specified for uploading
+- Instructions and directives provided
+- Image size restrictions indicated (between 80 KB and 5 MB)
+- Disease related to the uploaded image mentioned
+- Resources provided for learning about the three diseases mentioned
+- PDF report generation for the user
 
 ## Getting Started
 
